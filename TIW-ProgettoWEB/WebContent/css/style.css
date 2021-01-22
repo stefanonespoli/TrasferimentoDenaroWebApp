@@ -1,0 +1,275 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", sans-serif;}
+
+/*INDEX*/
+
+.hero{
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/Digital-Bank-Branch.jpg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+
+.form-box{
+	width: 380px;
+	height: 480px;
+	position: relative;
+	margin: 6% auto;
+	background : #D0D3D4;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.button-box{
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #E8F8F5;
+	border-radius:30px;
+}
+
+.toggle-btn{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+#btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: linear-gradient(to right, #0E6655,#48C9B0);
+	border-radius: 30px;
+	transition:.5s;
+}
+
+.input-group{
+	top:180px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+
+.input-field{
+	width: 100%;
+	padding:10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+
+.submit-btn{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right, #0E6655,#48C9B0);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+#login{
+	left: 50px;
+}
+#register{
+	left: 450px;
+}
+
+#messageLogin{
+	color: #0B5345;
+	text-align: center;
+	text-shadow: 2px 2px 5px #D1F2EB;
+	font-weight: bold;
+}
+
+#messageRegister{
+	color: #0B5345;
+	text-align: center;
+	text-shadow: 2px 2px 5px #D1F2EB;
+	font-weight: bold;
+	}
+
+/*HOMEPAGE*/
+
+
+.background-home{
+	background-color: #F8F9F9;	
+}
+
+.menu-bar{
+	background:linear-gradient(to right, #0E6655, #48C9B0);
+	}
+	
+.welcome{
+	color: white;
+	font-weight: bold;
+	font-size: large;
+	position: absolute;
+	right: 50px;
+	top: 5px;
+}
+
+.alertmessage{
+	color: #E74C3C;
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 2px 2px 5px #FADBD8;
+	text-align: center;
+	position:relative;
+	top:10px;
+}
+
+.standard{
+	color: #0B5345;
+	text-align: center;
+	text-shadow: 2px 2px 5px #D1F2EB;
+	font-weight: bold;
+	position:relative;
+	top:10px;
+	}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 20px 25px 20px;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 5px 5px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background: linear-gradient(to right, #5F6A6A, #EAECEE);
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.field{
+  margin: 25px 20px 25px 20px;
+  background: linear-gradient(to right, #B2BABB, #F2F3F4);
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 10px;
+  border: none;
+ }
+
+.entrata
+{
+	color: #239B56;
+	font-weight: bold;
+}
+.uscita
+{
+	color: #E74C3C;
+	font-weight: bold;
+}
+
+.fixe{
+	table-layout: fixed;
+    width: 300px; 
+    margin-bottom: 300px;
+    margin-top: 54px;
+    margin-right: 500px;
+    
+
+    
+    z-index: 0;
+    width: 100%;
+    max-width:50px;
+    min-width:50px;
+    display: block;
+	
+	
+}  
+
+.fixedd{
+		
+
+    margin-top: -300px;
+    margin-right: 25px;
+    
+	table-layout: fixed;
+    width: 300px; 
+    margin-bottom: 300px;
+    
+    z-index: 0;
+    width: 100%;
+    max-width:450px;
+
+    display: block;
+
+	
+}  
+
+#loginbutton2{
+	padding: 5px 40px;
+    width: auto;
+    margin: auto;
+    background: #B2BABB;
+    border: 0em;
+    color: white;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+}
+
+#loginbutton2:hover, #loginbutton2:active {
+  background-color: #5F6A6A;
+}
+
+.lgout:link, .lgout:visited {
+  background-color: #B2BABB;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.lgout:hover, .lgout:active {
+  background-color: #5F6A6A;
+}
+
+.box{
+	outline: none;
+	background: transparent;
+	border-radius: 5px;
+	margin: 2px 2px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Home</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+<script src="js/utils.js" charset="utf-8" defer></script>
+<script src="js/script.js" charset="utf-8" defer></script>
+<script src="js/rubrica.js" charset="utf-8" defer></script>
+
+</head>
+<body>
+    
+  <div class="background-home">
+   <div class="menu-bar">
+     
+     <div> <img src ="img/logo.png" alt="logo" width="160" height="60"> 
+     
+        <div class="welcome"> <span>Bentornato</span>
+           <span id="id_username"></span>
+           <span>! Non sei tu? </span> 
+           <a href="Logout" class="lgout">Logout</a>
+        </div> 
+       </div>
+      </div>
+   
+<div id="id_alert" class="alertmessage"></div>
+
+<table>
+<tr>
+<td class="fixe">
+<table id="id_listcontainer" class="content-table">
+  <thead>
+    <tr>
+      <th class=" ">CodiceConto</th>
+      <th class=" ">Nome</th>
+      <th class=" ">Saldo (&#8364)</th>
+      <th>Dettagli</th>
+    </tr>
+  </thead>
+  <tbody id="id_listcontainerbody"> </tbody> </table></td>
+
+  <td>
+  
+  <p id="id_contoSelez" class="standard">   </p>
+			
+			<table id="id_detailcontainer" class="content-table">
+					<thead>
+						<tr>
+							<th>Data</th>
+							<th>Codice del Conto di origine</th>
+							<th>Codice del Conto destinatario</th>
+							<th>Causale</th>
+							<th>Importo (&#8364)</th>
+							<th>Movimento in entrata/uscita</th>
+						</tr>
+					</thead>
+					<tbody id="id_detailcontainerbody">
+					</tbody>
+				</table>
+				
+				<form id="id_transferform" action="#">
+				<br>
+				
+
+					<fieldset class="field">
+										<p>Esegui un versamento dal conto selezionato </p>
+						Causale versamento: <input class="box" type="text" name="causale" maxlength="120"
+								 required />
+						
+						
+							Importo (&#8364): <input class="box" type="number" lang="en" step="0.01" name="importo" min=0.01 required /> <br>
+								
+								Codice del conto destinatario: <input  class="box" type="number" list="datalistCodiciConto" step="1" name="codiceContoDest" id="codiceContoDest" min="1" max="999999999" required><br>
+								<datalist id="datalistCodiciConto"></datalist>
+								
+								Id utente destinatario: <input type="number" class="box" list="datalistIdUtente"  step="1" name="idUtente" id="idUtente" min="1" max="999999999" required> 
+								  <datalist id="datalistIdUtente"></datalist>
+								  <br>
+						
+
+						<input type="hidden" id="contoId" name="contoId">  <!-- conto id conto codice qua ocio che dev essere uguale al javascript -->
+						<input type="button" id="loginbutton2" name="Esegui trasferimento" value="Esegui versamento">
+					</fieldset>
+				</form>
+				
+				</td>
+		</tr>
+		<tr>
+			<td class="fixedd" align="center">
+					
+
+				
+				<form id="id_creacontoform" action="#">
+
+
+					<fieldset class="field">
+					
+					<p>Desideri aprire un nuovo conto ? </p><br>
+						Nome del nuovo conto: <input class="box" type="text" name="nomeConto" maxlength="45" required> <br>
+						Importo iniziale (&#8364): <input class="box" type="number" lang="en" step="0.01" min="0.01" max="999999999" name="importoIniziale" required><br> 
+						    <input type="button" id="loginbutton2" value="Apri conto" name="submit" class="submit">
+					</fieldset>
+				</form>
+			</td>
+		</tr>
+	</table>
+
+ </div>
+</body>
+</html>

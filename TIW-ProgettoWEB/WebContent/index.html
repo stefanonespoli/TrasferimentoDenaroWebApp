@@ -1,0 +1,65 @@
+<html>
+<head>
+<!--  <meta charset="ISO-8859-1">-->
+<meta charset="UTF-8">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<title>MoneyTransfer</title>
+
+<script src="js/login.js" charset="utf-8" defer></script>
+<script src="js/registrazione.js" charset="utf-8" defer></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+		<div class="hero">
+		    <div class="form-box">
+		        <div class="button-box">
+		        <div id="btn"></div>
+		            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+		            <button type="button" class="toggle-btn" onclick="register()">Sign Up</button>
+		        </div>
+		        
+		    <form onsubmit="return false" id="login" class="input-group">
+		        <input id="loginUsername" name="utente" type="text" class="input-field" placeholder="Username" required>
+		        <input id="loginPwd" type="password" name="pwd" class="input-field" placeholder="Password" required>
+		        <p>&nbsp;</p>
+		        <button id="loginbutton" type="submit" value="login" class="submit-btn">Log In</button>
+		        <p>&nbsp;</p>
+		        <p id="messageLogin"></p>
+		    </form>
+		    
+		    
+		    <form onsubmit="return false" id="register" class="input-group">
+		        <input id="user_reg" type="text" name="utente" class="input-field" placeholder="Username" required>
+		        <input id="mail_reg" type="email" name="mail" class="input-field" placeholder="Email" required>
+		        <input id="psw_reg" type="password" name="pwd" class="input-field" placeholder="Password" required>
+		        <input id="psw2_reg" type="password" name="pwdCk" class="input-field" placeholder="Ripeti Password" required>
+		        <p>&nbsp;</p>
+		        <button id="registerbutton" type="submit" value="registrati" class="submit-btn">Sign Up</button>
+		        <p>&nbsp;</p>
+		        <p id="messageRegister"></p>
+		    </form>
+		    
+		</div>	
+		
+		</div>	
+		
+		<script>
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("btn");
+		
+		function register(){
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px";
+		}
+		function login(){
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0";
+		}
+		</script>
+			
+</body>
+</html>
